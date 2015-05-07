@@ -1,3 +1,20 @@
+    
+
+    var bio = {
+        "name": "Eddie Naff",
+        "role": "Web Developer",
+        "contacts": {
+            "mobile": "415-200-7004",
+            "email": "john@example.com",
+            "github": "johndoe",
+            "twitter": "@johndoe",
+            "location": "San Francisco"
+        },
+        "bioPic": "http://www.placehold.it/150x150",
+        "welcomeMessage": "A real cool customer...",
+        "skills": ['Pizza eating', 'fornicating', 'general trouble-making']
+    };
+
     var work = {
         "jobs": [{
             "employer": "ClearSlide",
@@ -46,21 +63,6 @@
         ]
     }];
 
-    var bio = {
-        "name": "Eddie Naff",
-        "role": "Web Developer",
-        "contacts": {
-            "mobile": "415-200-7004",
-            "email": "john@example.com",
-            "github": "johndoe",
-            "twitter": "@johndoe",
-            "location": "San Francisco"
-        },
-        "bioPic": "http://www.placehold.it/150x150",
-        "welcomeMessage": "Hey there sexy",
-        "skills": ['Pizza eating', 'fornicating', 'general trouble-making']
-    };
-
     var education = {
         "schools": [{
             "name": "San Francisco State University",
@@ -89,11 +91,31 @@
 
         var formattedName = HTMLheaderName.replace('%data%', bio.name);
         var formattedRole = HTMLheaderRole.replace('%data%', bio.role);
-        var formattedContactinfo = HTMLcontactGeneric.replace('%data%', bio.contact);
+        var formattedContactMobile = HTMLmobile.replace('%data%', bio.contacts.mobile);
+        var formattedContactEmail = HTMLemail.replace('%data%', bio.contacts.email);
+        var formattedContactTwitter = HTMLtwitter.replace('%data%', bio.contacts.twitter);
+        var formattedContactGithub = HTMLgithub.replace('%data%', bio.contacts.github);
+        var formattedContactBlog = HTMLblog.replace('%data%', bio.contacts.blog);
+        var formattedContactLocation = HTMLlocation.replace('%data%', bio.contacts.location);
         var formattedPicture = HTMLbioPic.replace('%data%', bio.bioPic);
+        var formattedWelcomeMsg = HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage);
 
+        $('#topContacts').append(formattedContactMobile);
+        $('#topContacts').append(formattedContactTwitter);
+        $('#topContacts').append(formattedContactGithub);
+        $('#topContacts').append(formattedContactBlog);
+        $('#topContacts').append(formattedContactLocation);
+        $('#topContacts').append(formattedContactEmail);
+        $('#header').append(formattedWelcomeMsg);
+        $('#header').append(formattedPicture);
         $('#header').prepend(formattedRole);
         $('#header').prepend(formattedName);
+
+
+        // for (var contactInfo in contacts) {
+        //     var formatted
+        // }
+
 
         if (bio.skills.length > 0) {
             $('#header').append(HTMLskillsStart);
