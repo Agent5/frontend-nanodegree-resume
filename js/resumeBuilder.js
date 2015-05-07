@@ -15,34 +15,34 @@
     };
 
     var projects = [{
-        "title": "",
-        "datesWorked": "",
-        "description": "",
+        "title": "First",
+        "datesWorked": "2015",
+        "description": "No desc.",
         "images": [
             "http://www.placehold.it/125X200",
+            "http://www.placehold.it/125X300",
             "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X200"
+            "http://www.placehold.it/125X300"
         ]
     }, {
-        "title": "",
-        "datesWorked": "",
-        "description": "",
+        "title": "Second",
+        "datesWorked": "2015",
+        "description": "No desc.",
         "images": [
             "http://www.placehold.it/125X200",
+            "http://www.placehold.it/125X300",
             "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X200"
+            "http://www.placehold.it/125X300"
         ]
     }, {
-        "title": "",
-        "datesWorked": "",
-        "description": "",
+        "title": "Third",
+        "datesWorked": "2015",
+        "description": "No desc.",
         "images": [
             "http://www.placehold.it/125X200",
+            "http://www.placehold.it/125X300",
             "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X200"
+            "http://www.placehold.it/125X300"
         ]
     }];
 
@@ -149,8 +149,30 @@
         return internationalizedName;
     }
 
-    console.log(inName('Eddie', 'Naff'));
+    projects.display = function() {
+        var countProjects = projects.length;
+        for (var i = 0; i < countProjects; i++) {
+            $('#projects').append(HTMLprojectStart);
+
+            var formattedProjTitle = HTMLprojectTitle.replace('%data%', projects[i].title);
+            $('.project-entry:last').append(formattedProjTitle);
+
+            var formattedProjDescription = HTMLprojectDescription.replace('%data%', projects[i].description);
+            $('.project-entry:last').append(formattedProjDescription);
+
+            var formattedProjDatesWorked = HTMLprojectDates.replace('%data%', projects[i].datesWorked);
+            $('.project-entry:last').append(formattedProjDatesWorked);
+
+            for (var image in projects[i].images) {
+                var formattedProjImages = HTMLprojectImage.replace('%data%', projects[i].images[image]);
+                $('.project-entry:last').append(formattedProjImages);
+            }
+        }
+    };
+
+    console.log(projects.length);
 
     console.log(locationizer(work));
     displayBio();
+    projects.display();
     displayWork();
