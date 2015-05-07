@@ -19,13 +19,13 @@
         "jobs": [{
             "employer": "ClearSlide",
             "title": "Marketing Development Representative",
-            "location": "San Francisco 1",
+            "location": "San Francisco",
             "datesWorked": "November 2013 - April 2015",
             "description": "orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla odio sed porta feugiat. Curabitur sed rutrum massa. Ut in convallis diam, non pharetra velit. Curabitur sit amet condimentum orci. Cras vitae venenatis eros. Proin posuere, tellus vitae interdum mattis, ex justo malesuada velit, et ultrices ligula velit tincidunt mauris. Vestibulum maximus felis vel felis volutpat viverra quis sit amet justo. Aliquam libero eros, dignissim et facilisis quis, suscipit et massa. Donec pretium ante ac ultrices luctus. Morbi eu elit lobortis, gravida sem in, pharetra lectus. Suspendisse condimentum malesuada neque, sed condimentum diam tristique sit amet. Proin at urna sed orci vestibulum ultrices vel sit amet mi. Maecenas dignissim augue porta, condimentum nibh ut, dictum velit. Donec id eleifend tortor, vitae malesuada leo."
         }, {
             "employer": "Administrative Office of the Courts",
             "title": "Don't remember title",
-            "location": "San Francisco 2",
+            "location": "San Francisco",
             "datesWorked": "July 2011 - June 2013",
             "description": "A crap job that I needed at the time."
         }],
@@ -69,15 +69,15 @@
             "location": "San Francisco",
             "degree": "BA",
             "majors": ["Cinema"],
-            "datesAttended": "",
-            "Uri": ""
+            "datesAttended": "2001 - 2006",
+            "uri": "#"
         }, {
             "name": "University of California, Irvine",
             "location": "Irvine",
-            "degree": "N/A",
+            "degree": "MURP (not completed)",
             "majors": ["Urban and Regional Planning"],
-            "datesAttended": "",
-            "Uri": ""
+            "datesAttended": "2006 - 2008",
+            "uri": "#"
         }],
         "onlineCourses": [{
             "title": "JavaScript Syntax",
@@ -191,8 +191,29 @@
         }
     };
 
+    function displayEducation() {
+        var countEducation = education.schools.length;
+        for (var i = 0; i < countEducation; i++) {
+            $('#education').append(HTMLschoolStart);
+
+            var formattedSchoolName = HTMLschoolName.replace('%data%', education.schools[i].name);
+            var formattedSchoolDegree = HTMLschoolDegree.replace('%data%', education.schools[i].degree);
+            var formattedSchoolMajor = HTMLschoolMajor.replace('%data%', education.schools[i].majors);
+            var formattedSchoolLocation = HTMLschoolLocation.replace('%data%', education.schools[i].location);
+            var formattedSchoolDates = HTMLschoolDates.replace('%data%', education.schools[i].datesAttended);
+
+            var formattedSchoolNameDegree = formattedSchoolName + formattedSchoolDegree;
+            
+            $('.education-entry:last').append(formattedSchoolNameDegree);
+            $('.education-entry:last').append(formattedSchoolDates);
+            $('.education-entry:last').append(formattedSchoolMajor);
+            $('.education-entry:last').append(formattedSchoolLocation);
+        }
+    }
+
     displayBio();
-    projects.display();
     displayWork();
+    projects.display();
+    displayEducation();
 
     $('#mapDiv').append(googleMap);
