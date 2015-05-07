@@ -147,7 +147,6 @@
             $('.work-entry:last').append(formattedLocation);
             $('.work-entry:last').append(formattedDates);
             $('.work-entry:last').append(formattedDescription);
-            console.log('Index pos. ' + job + ': ' + work.jobs[job].employer);
         }
     }
 
@@ -192,9 +191,6 @@
         }
     };
 
-    console.log(projects.length);
-
-    console.log(locationizer(work));
     displayBio();
     projects.display();
     displayWork();
