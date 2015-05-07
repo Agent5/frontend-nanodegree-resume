@@ -194,3 +194,5 @@
     displayBio();
     projects.display();
     displayWork();
+
+    $('#mapDiv').append(googleMap);
