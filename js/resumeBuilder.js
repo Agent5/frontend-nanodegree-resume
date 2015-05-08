@@ -82,7 +82,7 @@
         "onlineCourses": [{
             "title": "JavaScript Syntax",
             "school": "Udacity",
-            "datesAttended": "2015",
+            "datesAttended": "April 2015",
             "url": "http://www.udacity.com/course/ud804"
         }]
     };
@@ -202,6 +202,27 @@
             $('.education-entry:last').append(formattedSchoolDates);
             $('.education-entry:last').append(formattedSchoolMajor);
             $('.education-entry:last').append(formattedSchoolLocation);
+        }
+
+        var countOnlineClasses = education.onlineCourses.length;
+        // include a sub-headedr for online classes
+        $('#education:last').append(HTMLonlineClasses);
+        for (i=0; i < countOnlineClasses; i++) {
+            // input a .education-entry div for each online class
+            $('#education').append(HTMLschoolStart);
+
+            var formattedOnlineTitle = HTMLonlineTitle.replace('%data%', education.onlineCourses[i].title);
+            var formattedOnlineSchool = HTMLonlineSchool.replace('%data%', education.onlineCourses[i].school);
+            var formattedOnlineDates = HTMLonlineDates.replace('%data%', education.onlineCourses[i].datesAttended);
+            var formattedOnlineURL =  HTMLonlineURL.replace('%data%', education.onlineCourses[i].url);
+
+            var formattedOnlineTitleSchool = formattedOnlineTitle + formattedOnlineSchool;
+
+            // append the online class info
+            $('.education-entry:last').append(formattedOnlineTitleSchool);
+            // $('.education-entry:last').append(formattedOnlineTitle);
+            $('.education-entry:last').append(formattedOnlineDates);
+            $('.education-entry:last').append(formattedOnlineURL);
         }
     };
 
