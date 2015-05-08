@@ -1,5 +1,3 @@
-    
-
     var bio = {
         "name": "Eddie Naff",
         "role": "Web Developer",
@@ -31,37 +29,39 @@
         }],
     };
 
-    var projects = [{
-        "title": "First",
-        "datesWorked": "2015",
-        "description": "No desc.",
-        "images": [
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X300",
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X300"
-        ]
-    }, {
-        "title": "Second",
-        "datesWorked": "2015",
-        "description": "No desc.",
-        "images": [
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X300",
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X300"
-        ]
-    }, {
-        "title": "Third",
-        "datesWorked": "2015",
-        "description": "No desc.",
-        "images": [
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X300",
-            "http://www.placehold.it/125X200",
-            "http://www.placehold.it/125X300"
-        ]
-    }];
+    var projects = {
+        "projects": [{
+            "title": "First",
+            "datesWorked": "2015",
+            "description": "No desc.",
+            "images": [
+                "http://www.placehold.it/125X200",
+                "http://www.placehold.it/125X300",
+                "http://www.placehold.it/125X200",
+                "http://www.placehold.it/125X300"
+            ]
+        }, {
+            "title": "Second",
+            "datesWorked": "2015",
+            "description": "No desc.",
+            "images": [
+                "http://www.placehold.it/125X200",
+                "http://www.placehold.it/125X300",
+                "http://www.placehold.it/125X200",
+                "http://www.placehold.it/125X300"
+            ]
+        }, {
+            "title": "Third",
+            "datesWorked": "2015",
+            "description": "No desc.",
+            "images": [
+                "http://www.placehold.it/125X200",
+                "http://www.placehold.it/125X300",
+                "http://www.placehold.it/125X200",
+                "http://www.placehold.it/125X300"
+            ]
+        }]
+    };
 
     var education = {
         "schools": [{
@@ -143,8 +143,8 @@
             var formattedEmployerTitle = formattedEmployer + formattedTitle;
             var formmattedDateLocation = formattedDates + ', ' + formattedLocation;
 
-            $('.work-entry:last').append(formattedEmployerTitle);
             $('.work-entry:last').append(formattedLocation);
+            $('.work-entry:last').append(formattedEmployerTitle);
             $('.work-entry:last').append(formattedDates);
             $('.work-entry:last').append(formattedDescription);
         }
@@ -171,25 +171,27 @@
     }
 
     projects.display = function() {
-        var countProjects = projects.length;
+        var countProjects = projects.projects.length;
         for (var i = 0; i < countProjects; i++) {
             $('#projects').append(HTMLprojectStart);
 
-            var formattedProjTitle = HTMLprojectTitle.replace('%data%', projects[i].title);
+            var formattedProjTitle = HTMLprojectTitle.replace('%data%', projects.projects[i].title);
             $('.project-entry:last').append(formattedProjTitle);
 
-            var formattedProjDescription = HTMLprojectDescription.replace('%data%', projects[i].description);
+            var formattedProjDescription = HTMLprojectDescription.replace('%data%', projects.projects[i].description);
             $('.project-entry:last').append(formattedProjDescription);
 
-            var formattedProjDatesWorked = HTMLprojectDates.replace('%data%', projects[i].datesWorked);
+            var formattedProjDatesWorked = HTMLprojectDates.replace('%data%', projects.projects[i].datesWorked);
             $('.project-entry:last').append(formattedProjDatesWorked);
 
-            for (var image in projects[i].images) {
-                var formattedProjImages = HTMLprojectImage.replace('%data%', projects[i].images[image]);
+            for (var image in projects.projects[i].images) {
+                var formattedProjImages = HTMLprojectImage.replace('%data%', projects.projects[i].images[image]);
                 $('.project-entry:last').append(formattedProjImages);
             }
         }
     };
+    var countProjects = projects.projects.length;
+    console.log(countProjects);
 
     function displayEducation() {
         var countEducation = education.schools.length;
@@ -203,7 +205,7 @@
             var formattedSchoolDates = HTMLschoolDates.replace('%data%', education.schools[i].datesAttended);
 
             var formattedSchoolNameDegree = formattedSchoolName + formattedSchoolDegree;
-            
+
             $('.education-entry:last').append(formattedSchoolNameDegree);
             $('.education-entry:last').append(formattedSchoolDates);
             $('.education-entry:last').append(formattedSchoolMajor);
