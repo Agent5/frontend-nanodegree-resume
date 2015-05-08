@@ -87,7 +87,27 @@
         }]
     };
 
-    function displayBio() {
+    function locationizer(work_obj) {
+        var workLocations = [];
+        for (var i in work_obj.jobs) {
+            workLocations.push(work.jobs[i].location);
+        }
+        return workLocations;
+    }
+
+    $('#main').append(internationalizeButton);
+
+
+    function inName(name) {
+        var namesArray = bio.name.split(' ');
+        var newFirst = namesArray[0].slice(0, 1) + namesArray[0].slice(1);
+        var newLast = namesArray[1].toUpperCase();
+        var internationalizedName = newFirst + ' ' + newLast;
+
+        return internationalizedName;
+    }
+
+    bio.display = function () {
 
         var formattedName = HTMLheaderName.replace('%data%', bio.name);
         var formattedRole = HTMLheaderRole.replace('%data%', bio.role);
@@ -111,12 +131,6 @@
         $('#header').prepend(formattedRole);
         $('#header').prepend(formattedName);
 
-
-        // for (var contactInfo in contacts) {
-        //     var formatted
-        // }
-
-
         if (bio.skills.length > 0) {
             $('#header').append(HTMLskillsStart);
             var countSkills = bio.skills.length;
@@ -125,9 +139,9 @@
                 $('#skills').append(HTMLskills.replace('%data%', bio.skills[i]));
             }
         }
-    }
+    };
 
-    function displayWork() {
+    work.display = function() {
         for (var job in work.jobs) {
             // create new div for work experience
             $('#workExperience').append(HTMLworkStart.replace('%data%', work.jobs[job].datesWorked));
@@ -148,27 +162,7 @@
             $('.work-entry:last').append(formattedDates);
             $('.work-entry:last').append(formattedDescription);
         }
-    }
-
-    function locationizer(work_obj) {
-        var workLocations = [];
-        for (var i in work_obj.jobs) {
-            workLocations.push(work.jobs[i].location);
-        }
-        return workLocations;
-    }
-
-    $('#main').append(internationalizeButton);
-
-
-    function inName(name) {
-        var namesArray = bio.name.split(' ');
-        var newFirst = namesArray[0].slice(0, 1) + namesArray[0].slice(1);
-        var newLast = namesArray[1].toUpperCase();
-        var internationalizedName = newFirst + ' ' + newLast;
-
-        return internationalizedName;
-    }
+    };
 
     projects.display = function() {
         var countProjects = projects.projects.length;
@@ -190,10 +184,8 @@
             }
         }
     };
-    var countProjects = projects.projects.length;
-    console.log(countProjects);
 
-    function displayEducation() {
+    education.display = function() {
         var countEducation = education.schools.length;
         for (var i = 0; i < countEducation; i++) {
             $('#education').append(HTMLschoolStart);
@@ -211,11 +203,11 @@
             $('.education-entry:last').append(formattedSchoolMajor);
             $('.education-entry:last').append(formattedSchoolLocation);
         }
-    }
+    };
 
-    displayBio();
-    displayWork();
+    bio.display();
+    work.display();
     projects.display();
-    displayEducation();
+    education.display();
 
     $('#mapDiv').append(googleMap);
