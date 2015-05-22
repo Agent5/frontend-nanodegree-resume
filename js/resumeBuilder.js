@@ -19,14 +19,27 @@
             "title": "Marketing Development Representative",
             "location": "San Francisco",
             "datesWorked": "November 2013 - April 2015",
-            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla odio sed porta feugiat. Curabitur sed rutrum massa. Ut in convallis diam, non pharetra velit. Curabitur sit amet condimentum orci. Cras vitae venenatis eros. Proin posuere, tellus vitae interdum mattis, ex justo malesuada velit, et ultrices ligula velit tincidunt mauris. Vestibulum maximus felis vel felis volutpat viverra quis sit amet justo. Aliquam libero eros, dignissim et facilisis quis, suscipit et massa. Donec pretium ante ac ultrices luctus. Morbi eu elit lobortis, gravida sem in, pharetra lectus. Suspendisse condimentum malesuada neque, sed condimentum diam tristique sit amet. Proin at urna sed orci vestibulum ultrices vel sit amet mi. Maecenas dignissim augue porta, condimentum nibh ut, dictum velit. Donec id eleifend tortor, vitae malesuada leo."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing " +
+            "elit. Morbi fringilla odio sed porta feugiat. Curabitur sed rutrum " +
+            " massa. Ut in convallis diam, non pharetra velit. Curabitur sit amet " +
+            "condimentum orci. Cras vitae venenatis eros. Proin posuere, tellus " +
+            "vitae interdum mattis, ex justo malesuada velit, et ultrices ligula " +
+            "velit tincidunt mauris. Vestibulum maximus felis vel felis volutpat " +
+            "viverra quis sit amet justo. Aliquam libero eros, dignissim et " +
+            "facilisis quis, suscipit et massa. Donec pretium ante ac ultrices " +
+            "luctus. Morbi eu elit lobortis, gravida sem in, pharetra lectus. "+
+            "Suspendisse condimentum malesuada neque, sed condimentum diam " +
+            "tristique sit amet. Proin at urna sed orci vestibulum ultrices vel " +
+            "sit amet mi. Maecenas dignissim augue porta, condimentum nibh ut, " +
+            "dictum velit. Donec id eleifend tortor, vitae malesuada leo."
         }, {
             "employer": "Administrative Office of the Courts",
             "title": "Don't remember title",
             "location": "San Francisco",
             "datesWorked": "July 2011 - June 2013",
-            "description": "A crap job that I needed at the time."
-        }],
+            "description": "A really cool place to work but trapped in old MS " +
+            "software."
+        }]
     };
 
     var projects = {
@@ -126,6 +139,12 @@
         $('#topContacts').append(formattedContactBlog);
         $('#topContacts').append(formattedContactLocation);
         $('#topContacts').append(formattedContactEmail);
+        $('#footerContacts').append(formattedContactMobile);
+        $('#footerContacts').append(formattedContactTwitter);
+        $('#footerContacts').append(formattedContactGithub);
+        $('#footerContacts').append(formattedContactBlog);
+        $('#footerContacts').append(formattedContactLocation);
+        $('#footerContacts').append(formattedContactEmail);
         $('#header').append(formattedWelcomeMsg);
         $('#header').append(formattedPicture);
         $('#header').prepend(formattedRole);
