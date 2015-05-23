@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/udacity/frontend-nanodegree-resume/issues"
   },
-  "homepage": "https://github.com/udacity/frontend-nanodegree-resume"
+  "homepage": "https://github.com/udacity/frontend-nanodegree-resume",
+  "dependencies": {
+    "bower": "^1.4.1"
+  }
 }

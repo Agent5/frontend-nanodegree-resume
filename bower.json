@@ -1,0 +1,21 @@
+{
+  "name": "Resume",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Agent5/frontend-nanodegree-resume",
+  "authors": [
+    "Eddie Naff <eddienaff@gmail.com>"
+  ],
+  "description": "A personal resume for Eddie Naff",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
