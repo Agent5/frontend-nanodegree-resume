@@ -100,25 +100,25 @@
         }]
     };
 
-    function locationizer(work_obj) {
-        var workLocations = [];
-        for (var i in work_obj.jobs) {
-            workLocations.push(work.jobs[i].location);
-        }
-        return workLocations;
-    }
+    // function locationizer(work_obj) {
+    //     var workLocations = [];
+    //     for (var i in work_obj.jobs) {
+    //         workLocations.push(work.jobs[i].location);
+    //     }
+    //     return workLocations;
+    // }
 
-    $('#main').append(internationalizeButton);
+    // $('#main').append(internationalizeButton);
 
 
-    function inName(name) {
-        var namesArray = bio.name.split(' ');
-        var newFirst = namesArray[0].slice(0, 1) + namesArray[0].slice(1);
-        var newLast = namesArray[1].toUpperCase();
-        var internationalizedName = newFirst + ' ' + newLast;
+    // function inName(name) {
+    //     var namesArray = bio.name.split(' ');
+    //     var newFirst = namesArray[0].slice(0, 1) + namesArray[0].slice(1);
+    //     var newLast = namesArray[1].toUpperCase();
+    //     var internationalizedName = newFirst + ' ' + newLast;
 
-        return internationalizedName;
-    }
+    //     return internationalizedName;
+    // }
 
     bio.display = function () {
 
