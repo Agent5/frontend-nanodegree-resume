@@ -3,14 +3,14 @@
         "role": "Web Developer",
         "contacts": {
             "mobile": "415-200-7004",
-            "email": "john@example.com",
-            "github": "johndoe",
-            "twitter": "@johndoe",
-            "location": "San Francisco"
+            "email": "eddienaff@gmail.com",
+            "github": "Agent5",
+            "twitter": "@Agent5_",
+            "location": "Minneapolis"
         },
         "bioPic": "http://www.placehold.it/150x150",
         "welcomeMessage": "A real cool customer...",
-        "skills": ['Pizza eating', 'fornicating', 'general trouble-making']
+        "skills": ['HTML', 'CSS', 'JavaScript']
     };
 
     var work = {
@@ -25,20 +25,19 @@
             "condimentum orci. Cras vitae venenatis eros. Proin posuere, tellus " +
             "vitae interdum mattis, ex justo malesuada velit, et ultrices ligula " +
             "velit tincidunt mauris. Vestibulum maximus felis vel felis volutpat " +
-            "viverra quis sit amet justo. Aliquam libero eros, dignissim et " +
-            "facilisis quis, suscipit et massa. Donec pretium ante ac ultrices " +
-            "luctus. Morbi eu elit lobortis, gravida sem in, pharetra lectus. "+
-            "Suspendisse condimentum malesuada neque, sed condimentum diam " +
-            "tristique sit amet. Proin at urna sed orci vestibulum ultrices vel " +
-            "sit amet mi. Maecenas dignissim augue porta, condimentum nibh ut, " +
             "dictum velit. Donec id eleifend tortor, vitae malesuada leo."
         }, {
             "employer": "Administrative Office of the Courts",
             "title": "Don't remember title",
             "location": "San Francisco",
             "datesWorked": "July 2011 - June 2013",
-            "description": "A really cool place to work but trapped in old MS " +
-            "software."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing " +
+            "elit. Morbi fringilla odio sed porta feugiat. Curabitur sed rutrum " +
+            " massa. Ut in convallis diam, non pharetra velit. Curabitur sit amet " +
+            "condimentum orci. Cras vitae venenatis eros. Proin posuere, tellus " +
+            "vitae interdum mattis, ex justo malesuada velit, et ultrices ligula " +
+            "velit tincidunt mauris. Vestibulum maximus felis vel felis volutpat " +
+            "dictum velit. Donec id eleifend tortor, vitae malesuada leo."
         }]
     };
 
