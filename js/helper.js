@@ -12,14 +12,15 @@ Cameron Pittman
 These are HTML strings. As part of the course, you'll be using JavaScript functions
 replace the %data% placeholder text you see in them.
 */
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr/>';
+var HTMLheaderName = '<span class="myName">%data%</span>';
+var HTMLheaderRole = '<span>%data%</span>'; //<hr/>';
 
+// Removed the 'white-text' spans below and replace with icons
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><i class="orange-text orange-text fa fa-mobile fa-5x"></i><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><i class="orange-text orange-text fa fa-envelope-o fa-5x"></i>'; //<span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><i class="orange-text fa fa-twitter-square fa-5x"></i>'; // <span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><i class="orange-text fa fa-github-square fa-5x"></i>'; // <span class="white-text">%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><i class="orange-text orange-text fa fa-mobile"></i><span class="white-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><i class="orange-text orange-text fa fa-envelope-o"></i>'; //<span class="white-text">%data%</span></li>';
+var HTMLtwitter = '<li class="flex-item"><i class="orange-text fa fa-twitter-square"></i>'; // <span class="white-text">%data%</span></li>';
+var HTMLgithub = '<li class="flex-item"><i class="orange-text fa fa-github-square"></i>'; // <span class="white-text">%data%</span></li>';
 var HTMLblog = '<li class="flex-item">'; // <span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 

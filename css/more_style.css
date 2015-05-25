@@ -3,7 +3,7 @@
 html,
 body {
     height: 100%;
-    /*width:100%;*/
+    width:100%;
     padding: 0;
     margin: 0;
 }
@@ -24,4 +24,44 @@ body {
     
     color: #efefef;
     margin: 0;
+}
+
+/*.fa-github-square,*/
+/*.fa-twitter-square,*/
+.fa-envelope-o {
+  font-size: 3.5em;
+}
+
+.fa-mobile {
+  font-size: 4.5em;
+}
+
+.ctrlSpanPad {
+  padding: 0;
+}
+
+.ctrlBckgrnd {
+    background-color: #484848;
+}
+.ctrlNavPadding {
+  padding: 0 5% 0 5%;
+/*  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2.5%*/
+}
+
+i {
+  padding: 0 15px 0 15px;
+}
+
+.myName {
+  font-size: 1.5em;
+}
+
+.jumboTopBottomPadding {
+  padding: 0 15px 0 15px;
+}
+
+.appendNameRole {
+  margin: 0;
 }

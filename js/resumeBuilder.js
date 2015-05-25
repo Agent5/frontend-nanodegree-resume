@@ -8,8 +8,9 @@
             "twitter": "@Agent5_",
             "location": "Minneapolis"
         },
-        "bioPic": "http://www.placehold.it/150x150",
-        "welcomeMessage": "A real cool customer...",
+        "bioPic": "images/headshot.jpg",
+        "welcomeMessage": "I'm Eddie—a front-end web developer. " +
+        "I build sites that are functional and pretty.",
         "skills": ['HTML', 'CSS', 'JavaScript']
     };
 
@@ -146,8 +147,9 @@
         $('#footerContacts').append(formattedContactEmail);
         $('#header').append(formattedWelcomeMsg);
         $('#header').append(formattedPicture);
-        $('#header').prepend(formattedRole);
-        $('#header').prepend(formattedName);
+
+        $('.appendNameRole').prepend(formattedRole);
+        $('.appendNameRole').prepend(formattedName);
 
         if (bio.skills.length > 0) {
             $('#header').append(HTMLskillsStart);
