@@ -75,7 +75,8 @@ p {
 a {
   color: #1199C3;
   text-decoration: none;
-  margin-top: 10px;
+  /*changing to affect the navbar from 10px to 4px*/
+  margin-top: 4px;
   display: block;
 }
 
