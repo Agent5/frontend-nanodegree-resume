@@ -9,9 +9,9 @@
             "location": "Minneapolis"
         },
         "bioPic": "images/headshot.jpg",
-        "welcomeMessage": "I'm Eddie—a front-end web developer. " +
-        "I build sites that are functional and pretty.",
-        "skills": ['HTML', 'CSS', 'JavaScript']
+        "welcomeMessage": "I'm Eddie — a front-end web developer. " +
+        "I build sites that are <em>lean, functional, and stylish</em>.",
+        "skills": ['HTML', 'CSS', 'JavaScript', 'AngularJS']
     };
 
     var work = {

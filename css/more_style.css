@@ -60,9 +60,9 @@ i {
   font-size: 1.3em;
 }
 
-/*.jumboTopBottomPadding {
+.jumboTopBottomPadding {
   padding: 0 15px 0 15px;
-}*/
+}
 
 /*.appendNameRole {
   margin: 0;
@@ -73,4 +73,11 @@ i {
 }*/
 .myNavbarToggle {
   margin-top: 13px;
+}
+
+.welcome-message {
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: 24px;
+  color: white;
+  font-weight: 200;
 }
