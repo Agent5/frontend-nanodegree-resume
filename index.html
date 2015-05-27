@@ -20,7 +20,6 @@ need to load. You"ll see a lot of <link>s to CSS files for styles and
   <title>Eddie Naff - Resume</title>
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link href="http://fonts.googleapis.com/css?family=Lustria|Lato:300,400" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
   <link rel="stylesheet" href="bower_components/colors/css/colors.css" />
   <!-- endbower -->
@@ -54,8 +53,6 @@ need to load. You"ll see a lot of <link>s to CSS files for styles and
 </head>
 
 <body unresolved>
-  <div id="demo">
-  </div>
   <div class="container-fluid" id="main">
     <div class="row ctrlBckgrnd">
       <!--
@@ -100,40 +97,44 @@ need to load. You"ll see a lot of <link>s to CSS files for styles and
       <!-- End navbar experiment -->
       <!-- Begin jumbotron experiment -->
       <section id="head">
-        <div class="jumbotron jumboTopBottomPadding ctrlBckgrnd">
-          <div class="container-fluid">
-            <div class="row center-content">
-              <div class="col-xs-12 col-lg-6" id="header">
-                <!-- <h1>Hello.<i class="fa fa-comment-o" style="position: relative; top: -.7em"></i></h1> -->
-                <!-- <p>I'm Jason—an urban planner, technologist, and dabbler in design. I build tools to connect
-              and collaborate around the future of cities.</p> -->
-              </div>
-              <div class="col-sm-5 col-lg-6 social-media">
-                <ul class="list-inline">
-                  <li>
-                    <a href="http://www.twitter.com/agent5_" target="_blank"><i class="fa fa-twitter-square fa-5x"></i></a>
-                  </li>
-                  <li>
-                    <a href="http://github.com/Agent5" target="_blank"><i class="fa fa-github-square fa-5x"></i></a>
-                  </li>
-                  <li>
-                    <a href="http://www.linkedin.com/in/eddienaff" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
-                  </li>
-                  <li>
-                    <a href="http://www.facebook.com/eddie.naff" target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://plus.google.com/u/0/+EddieNaff/about/p/pub" target="_blank"><i class="fa fa-google-plus-square fa-5x"></i></a>
-                  </li>
-                </ul>
-                <ul class="list-inline">
-                  <li><i class="fa fa-envelope-o"></i></li>
-                  <li><i class="fa fa-mobile"></i></li>
-                </ul>
+        <div class="wrapper">
+          <canvas id="headerBackground">
+          </canvas>
+        </div>
+          <div class="jumbotron jumboTopBottomPadding ctrlBckgrnd">
+            <div class="container-fluid">
+              <div class="row center-content">        
+                <div class="col-xs-12 col-lg-6" id="header">
+
+                  <h1>Hello.<i class="fa fa-comment-o" style="position: relative; top: -.7em"></i></h1>
+                  <p>I'm Eddie — a front-end web developer. I build sites that are lean, functional, and stylish.</p>
+                </div>
+                <div class="col-sm-5 col-lg-6 social-media">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="http://www.twitter.com/agent5_" target="_blank"><i class="fa fa-twitter-square fa-5x"></i></a>
+                    </li>
+                    <li>
+                      <a href="http://github.com/Agent5" target="_blank"><i class="fa fa-github-square fa-5x"></i></a>
+                    </li>
+                    <li>
+                      <a href="http://www.linkedin.com/in/eddienaff" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
+                    </li>
+                    <li>
+                      <a href="http://www.facebook.com/eddie.naff" target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://plus.google.com/u/0/+EddieNaff/about/p/pub" target="_blank"><i class="fa fa-google-plus-square fa-5x"></i></a>
+                    </li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li><i class="fa fa-envelope-o"></i></li>
+                    <li><i class="fa fa-mobile"></i></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
       <!-- End junmbotron experiment -->
     </div>
@@ -218,7 +219,10 @@ need to load. You"ll see a lot of <link>s to CSS files for styles and
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/trianglify/dist/trianglify.min.js"></script>
   <!-- endbower -->
+  <!-- <script src="js/carbonation.js"></script> -->
+  <script src="js/canvasSizer.js"></script>
 </body>
 
 </html>

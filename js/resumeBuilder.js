@@ -9,8 +9,8 @@
             "location": "Minneapolis"
         },
         "bioPic": "images/headshot.jpg",
-        "welcomeMessage": "I'm Eddie — a front-end web developer. " +
-        "I build sites that are <em>lean, functional, and stylish</em>.",
+        // "welcomeMessage": "I'm Eddie — a front-end web developer. " +
+        // "I build sites that are <em>lean, functional, and stylish</em>.",
         "skills": ['HTML', 'CSS', 'JavaScript', 'AngularJS']
     };
 
@@ -146,7 +146,7 @@
         $('#footerContacts').append(formattedContactLocation);
         $('#footerContacts').append(formattedContactEmail);
         $('#header').append(formattedWelcomeMsg);
-        $('#header').append(formattedPicture);
+        // $('#header').append(formattedPicture);
 
         $('.appendNameRole').prepend(formattedRole);
         $('.appendNameRole').prepend(formattedName);
