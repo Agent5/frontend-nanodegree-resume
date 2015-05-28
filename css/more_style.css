@@ -3,18 +3,17 @@
 html,
 body {
     height: 100%;
-    width:100%;
+    width: 100%;
     padding: 0;
     margin: 0;
+    /*overflow-x:hidden; */
 }
-
 /*.container-fluid {
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
 }*/
-
 /*.fill-vert {
     width: 100%;
     height: 100%;
@@ -25,73 +24,93 @@ body {
     color: #efefef;
     margin: 0;
 }*/
-
 /*.fa-github-square,*/
 /*.fa-twitter-square,*/
+
 .fa-envelope-o {
-  font-size: 3.5em;
+    font-size: 3.5em;
 }
 
 .fa-mobile {
-  font-size: 4.5em;
+    font-size: 4.5em;
 }
-
 /*Control the padding to prevent the 'nav hamburger' from being too large */
+
 .ctrlSpanPad {
-  padding: 0;
+    padding: 0;
 }
 
 .ctrlBckgrnd {
     background-color: #484848;
 }
+
 .ctrlNavSizing {
-  padding: 0 5% 0 5%;
-/*  padding-left: 5%;
+    padding: 0 5% 0 5%;
+    /*  padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 2.5%*/
-
 }
 
 i {
-  padding: 0 15px 0 15px;
+    padding: 0 15px 0 15px;
 }
 
 .myName {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 .jumboTopBottomPadding {
-  padding: 0 15px 0 15px;
+    padding: 0 15px 0 15px;
 }
-
 /*.appendNameRole {
   margin: 0;
 }*/
-
 /*.myNavbarBrand {
   font-size: 1em;
 }*/
+
 .myNavbarToggle {
-  margin-top: 13px;
+    margin-top: 13px;
 }
 
 .welcome-message {
-  font-family: "Lato", "Roboto", sans-serif;
-  font-size: 24px;
-  color: white;
-  font-weight: 200;
+    font-family: "Lato", "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 50;
 }
 
 .canvas {
-  min-width:100%;
-  /*display:block;*/
+    min-width: 100%;
+    display:block;
 }
 
 #headerBackground {
-  position: absolute;
-  /*width: 500px;*/
-  /*height: 500px;*/
-  /*left: 20%;*/
-  top: 0;
-  text-align: center;
+    position: absolute;
+    /*width: 500px;*/
+    /*height: 500px;*/
+    /*left: 20%;*/
+    
+    top: 0;
+    text-align: center;
+}
+
+.navbar-inner {
+    /*background-image: url();*/
+    
+    background-color: orange;
+}
+
+.jumbotron h1 {
+    font-size: 75px;
+    line-height: 70px;
+    padding: 0 0 30 0;
+    margin: 0 0 30 0;
+    /*display: inline;*/
+}
+
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

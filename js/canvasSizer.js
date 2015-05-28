@@ -7,6 +7,7 @@
 
     function resizeCanvas() {
             canvas.width = window.innerWidth;
+            // console.log(window.innerWidth);
             canvas.height = document.getElementsByClassName('.jumbotron').innerHeight;
 
             /**
@@ -17,19 +18,27 @@
     }
     resizeCanvas();
 
+    // make Trianglify re-draw at a set interval
+    setInterval(function() {resizeCanvas();}, 6000);
+
     function drawStuff() {
             // do your drawing stuff here
 
       // do my Trianglify stuff here
+      // copy the current height of the canvas parent
       var canvasHeight = $('.ctrlBckgrnd').height();
-      console.log(canvasHeight);
+      // console.log(canvasHeight);
       
       var pattern = Trianglify({
-          width: window.innerWidth, 
+          width: window.innerWidth - 15, 
           // height: window.innerHeight
-          height: canvasHeight
+          height: canvasHeight,
+          // x_colors: 'random'
+          x_colors: 'random'
       });
       pattern.canvas(document.getElementById('headerBackground'));
+
+      pattern.canvas(document.getElementById('navbarImage'));
       // $('canvas').attr('width', width);
       // document.body.appendChild(pattern.canvas());
 
