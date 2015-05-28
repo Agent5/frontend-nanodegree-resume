@@ -1,3 +1,18 @@
+// this is the overflow-x console debugger
+$.each( $('*'), function() { 
+    if( $(this).width() > $('body').width()) {
+        console.log("Wide Element: ", $(this), "Width: ", $(this).width()); 
+    } 
+});
+
+// the canvas re-sizer is below
+// TODO: To remove the horizontal scrollbar:
+//       instead of declaring the body overflow-x: hidden;
+//       use the mediaMatch method to query the viewport and 
+//       remove 15px from the window.innerWidth calculation below
+//       for desktop and larger sized viewports
+//       That will make the overflow-x console debugger above irrelevant 
+
 (function() {
     var canvas = document.getElementById('headerBackground'),
             context = canvas.getContext('2d');
@@ -19,7 +34,7 @@
     resizeCanvas();
 
     // make Trianglify re-draw at a set interval
-    setInterval(function() {resizeCanvas();}, 6000);
+    setInterval(function() {resizeCanvas();}, 15000);
 
     function drawStuff() {
             // do your drawing stuff here
@@ -30,7 +45,7 @@
       // console.log(canvasHeight);
       
       var pattern = Trianglify({
-          width: window.innerWidth - 15, 
+          width: window.innerWidth, 
           // height: window.innerHeight
           height: canvasHeight,
           // x_colors: 'random'

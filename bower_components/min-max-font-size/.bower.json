@@ -1,0 +1,14 @@
+{
+  "name": "min-max-font-size",
+  "homepage": "https://github.com/nathanford/min-max-font-size",
+  "_release": "9ce7eba233",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9ce7eba2330af678e343c8efdd88348b01f46213"
+  },
+  "_source": "https://github.com/nathanford/min-max-font-size.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/nathanford/min-max-font-size.git",
+  "_direct": true
+}

@@ -6,7 +6,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    /*overflow-x:hidden; */
+    font-family: 'Lato', 'Robot', sans-serif;
 }
 /*.container-fluid {
     height: 100%;
@@ -101,16 +101,59 @@ i {
     background-color: orange;
 }
 
-.jumbotron h1 {
+/*.jumbotron h1 {
     font-size: 75px;
     line-height: 70px;
     padding: 0 0 30 0;
     margin: 0 0 30 0;
-    /*display: inline;*/
-}
+    display: inline;
+}*/
 
 .bottom-align-text {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+body {
+          overflow-x: hidden;
+    }
+
+.jumbotron h1 {
+    font-size: 6vw;
+    max-font-size: 120px;
+    min-font-size: 70px;
+
+    font-family: "Lato", "Roboto", sans-serif;
+
+}
+
+.flex-item{
+  font-size: 1.25em;
+}
+
+.list-inline li {
+  padding: 0;
+}
+
+@media only screen and (max-width: 550px){
+    .jumbotron h1 {
+        font-size: 16vw;
+        max-font-size: 120px;
+        min-font-size: 70px;
+
+        font-family: "Lato", "Roboto", sans-serif;
+
+    }
+}
+
+@media only screen and (max-width: 740px){
+    .jumbotron h1 {
+        font-size: 13vw;
+        max-font-size: 120px;
+        min-font-size: 70px;
+
+        font-family: "Lato", "Roboto", sans-serif;
+
+    }
 }
