@@ -29,8 +29,7 @@
     "tag": "v0.2.1",
     "commit": "4f916f8084cb84c3dcecba12c7d1fa730e14b48a"
   },
-  "_source": "git://github.com/qrohlf/trianglify.git",
+  "_source": "https://github.com/qrohlf/trianglify.git",
   "_target": "~0.2.1",
-  "_originalSource": "trianglify",
-  "_direct": true
+  "_originalSource": "https://github.com/qrohlf/trianglify.git"
 }
