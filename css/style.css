@@ -189,9 +189,9 @@ span {
   .biopic {
     width: 150px;
   }
-  .welcome-message {
+ /* .welcome-message {
     display: none;
-  }
+  }*/
 }
 
 #map {

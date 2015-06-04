@@ -9,8 +9,7 @@
             "location": "Minneapolis"
         },
         "bioPic": "images/headshot.jpg",
-        "welcomeMessage": "I'm <span class=\"myName\">" + name + "</span> — a front-end web developer. " +
-        "I build sites that are <em>lean, functional, and stylish</em>.",
+        "welcomeMessage": "I build websites and web apps that are <em>lean, functional,</em> and <em>stylish</em>.",
         "skills": ['HTML', 'CSS', 'JavaScript', 'AngularJS']
     };
 
@@ -124,6 +123,15 @@
 
         var formattedName = HTMLheaderName.replace('%data%', bio.name);
         var formattedRole = HTMLheaderRole.replace('%data%', bio.role);
+
+        //prepare to append my name in the nav
+        var formattedNavBrand = formattedName + ' - ' + formattedRole;
+        // var formattedNavName = formattedName.replace('<span class="myName">', '');
+        // formattedNavName = formattedNavName.replace('</span>', '');
+        // var formattedNavRole = formattedRole.replace('<span class="myRole">', '');
+        // formattedNavRole = formattedNavRole.replace('</span>', '');
+        // var formattedNavBrand = formattedNavName + ' - ' + formattedNavRole;
+
         var formattedContactMobile = HTMLmobile.replace('%data%', bio.contacts.mobile);
         var formattedContactEmail = HTMLemail.replace('%data%', bio.contacts.email);
         var formattedContactTwitter = HTMLtwitter.replace('%data%', bio.contacts.twitter);
@@ -147,9 +155,9 @@
         $('#footerContacts').append(formattedContactEmail);
         $('#header').append(formattedWelcomeMsg);
         $('#about').append(formattedPicture);
-
-        $('.appendNameRole').prepend(formattedRole);
-        $('.myName').prepend(formattedName);
+        $('.roleTarget').prepend(formattedRole);
+        $('.nameTarget').prepend(formattedName);
+        $('.appendNavBrand').append(formattedNavBrand);
 
         if (bio.skills.length > 0) {
             $('#header').append(HTMLskillsStart);

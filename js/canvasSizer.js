@@ -23,7 +23,7 @@ $.each( $('*'), function() {
     function resizeCanvas() {
             canvas.width = window.innerWidth;
             // console.log(window.innerWidth);
-            canvas.height = document.getElementsByClassName('.jumbotron').innerHeight;
+            canvas.height = document.getElementsByClassName('.ctrlBckgrnd').innerHeight;
 
             /**
              * Your drawings need to be inside this function otherwise they will be reset when 
@@ -46,6 +46,7 @@ $.each( $('*'), function() {
       
       var pattern = Trianglify({
           width: window.innerWidth, 
+          // the commented code directly below is only for a full height canvas element
           // height: window.innerHeight
           height: canvasHeight,
           // x_colors: 'random'
@@ -53,7 +54,7 @@ $.each( $('*'), function() {
       });
       pattern.canvas(document.getElementById('headerBackground'));
 
-      pattern.canvas(document.getElementById('navbarImage'));
+      // pattern.canvas(document.getElementById('navbarImage'));
       // $('canvas').attr('width', width);
       // document.body.appendChild(pattern.canvas());
 

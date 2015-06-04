@@ -18,7 +18,6 @@
   "dependencies": {
     "bootstrap": "~3.3.4",
     "fontawesome": "~4.3.0",
-    "min-max-font-size": "https://github.com/nathanford/min-max-font-size.git",
     "trianglify": "https://github.com/qrohlf/trianglify.git#~0.2.1",
     "colors": "https://github.com/Agent5/colors.git"
   }
