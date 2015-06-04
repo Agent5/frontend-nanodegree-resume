@@ -129,6 +129,10 @@
         var formattedContactEmail = HTMLemail.replace('%data%', bio.contacts.email);
         var formattedContactTwitter = HTMLtwitter.replace('%data%', bio.contacts.twitter);
         var formattedContactGithub = HTMLgithub.replace('%data%', bio.contacts.github);
+        var formattedContactLinkedin = HTMLlinkedin;
+        var formattedContactFacebook = HTMLfacebook;
+        var formattedContactGooglePlus = HTMLgooglePlus;
+
         var formattedContactBlog = HTMLblog.replace('%data%', bio.contacts.blog);
         var formattedContactLocation = HTMLlocation.replace('%data%', bio.contacts.location);
         var formattedPicture = HTMLbioPic.replace('%data%', bio.bioPic);
@@ -140,12 +144,16 @@
         $('#topContacts').append(formattedContactBlog);
         $('#topContacts').append(formattedContactLocation);
         $('#topContacts').append(formattedContactEmail);
-        $('#footerContacts').append(formattedContactMobile);
+        // $('#footerContacts').append(formattedContactMobile);
         $('#footerContacts').append(formattedContactTwitter);
         $('#footerContacts').append(formattedContactGithub);
-        $('#footerContacts').append(formattedContactBlog);
-        $('#footerContacts').append(formattedContactLocation);
-        $('#footerContacts').append(formattedContactEmail);
+        $('#footerContacts').append(formattedContactFacebook);
+        $('#footerContacts').append(formattedContactGooglePlus);
+        $('#footerContacts').append(formattedContactLinkedin);
+
+        // $('#footerContacts').append(formattedContactBlog);
+        // $('#footerContacts').append(formattedContactLocation);
+        // $('#footerContacts').append(formattedContactEmail);
         $('#header').append(formattedWelcomeMsg);
         $('#about').append(formattedPicture);
         $('.roleTarget').prepend(formattedRole);

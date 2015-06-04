@@ -17,10 +17,17 @@ var HTMLheaderRole = '<span class="myRole">%data%</span>'; //<hr/>';
 
 // Removed the 'white-text' spans below and replace with icons
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><i class="orange-text orange-text fa fa-mobile"></i><span class="white-text">%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><a href="http://www.twitter.com/agent5_" target="_blank"><i class="fa fa-twitter-square fa-5x"></i></a></li>';
 var HTMLemail = '<li class="flex-item"><i class="orange-text orange-text fa fa-envelope-o"></i>'; //<span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><i class="orange-text fa fa-twitter-square"></i>'; // <span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><i class="orange-text fa fa-github-square"></i>'; // <span class="white-text">%data%</span></li>';
+var HTMLtwitter = '<li class="flex-item"><a href="http://www.twitter.com/agent5_" target="_blank"><i class="fa fa-twitter-square fa-4x"></i></a></li>';
+
+
+// Add a couple of connection points -Eddie Naff
+var HTMLlinkedin = '<a href="http://www.linkedin.com/in/eddienaff" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>';
+var HTMLfacebook = '<a href="http://www.facebook.com/eddie.naff" target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a>';
+var HTMLgooglePlus = '<a href="https://plus.google.com/u/0/+EddieNaff/about/p/pub" target="_blank"><i class="fa fa-google-plus-square fa-5x"></i></a>';
+
+var HTMLgithub = '<a href="http://github.com/Agent5" target="_blank"><i class="fa fa-github-square fa-5x"></i></a>';
 var HTMLblog = '<li class="flex-item">'; // <span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
