@@ -47,30 +47,23 @@
             "datesWorked": "2015",
             "description": "No desc.",
             "images": [
-                "http://www.placehold.it/125X200",
-                "http://www.placehold.it/125X300",
-                "http://www.placehold.it/125X200",
-                "http://www.placehold.it/125X300"
+                "https://placehold.it/250x250",
+                "https://placehold.it/250x250"
             ]
         }, {
             "title": "Second",
             "datesWorked": "2015",
             "description": "No desc.",
             "images": [
-                "http://www.placehold.it/125X200",
-                "http://www.placehold.it/125X300",
-                "http://www.placehold.it/125X200",
-                "http://www.placehold.it/125X300"
-            ]
+                "https://placehold.it/250x250",
+                "https://placehold.it/250x250"            ]
         }, {
             "title": "Third",
             "datesWorked": "2015",
             "description": "No desc.",
             "images": [
-                "http://www.placehold.it/125X200",
-                "http://www.placehold.it/125X300",
-                "http://www.placehold.it/125X200",
-                "http://www.placehold.it/125X300"
+                "https://placehold.it/250x250",
+                "https://placehold.it/250x250"
             ]
         }]
     };
