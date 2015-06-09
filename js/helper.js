@@ -17,17 +17,40 @@ var HTMLheaderRole = '<span class="myRole">%data%</span>'; //<hr/>';
 
 // Removed the 'white-text' spans below and replace with icons
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><a href="http://www.twitter.com/agent5_" target="_blank"><i class="fa fa-twitter-square fa-5x"></i></a></li>';
+var HTMLmobile = '<li class="flex-item"><a href="http://www.twitter.com/agent5_" target="_blank"><i class="fa fa-twitter fa-5x"></i></a></li>';
 var HTMLemail = '<li class="flex-item"><i class="orange-text orange-text fa fa-envelope-o"></i>'; //<span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><a href="http://www.twitter.com/agent5_" target="_blank"><i class="fa fa-twitter-square fa-4x"></i></a></li>';
 
+
+var HTMLtwitter =     '<a href="http://www.twitter.com/agent5_" target="_blank">'+
+                      '<span class="fa-stack fa-2x">'+
+                      '<i class="fa fa-circle fa-stack-2x"></i>'+
+                      '<i class="fa fa-twitter fa-inverse fa-stack-1x"></i>'+
+                      '</span></a>';
 
 // Add a couple of connection points -Eddie Naff
-var HTMLlinkedin = '<a href="http://www.linkedin.com/in/eddienaff" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>';
-var HTMLfacebook = '<a href="http://www.facebook.com/eddie.naff" target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a>';
-var HTMLgooglePlus = '<a href="https://plus.google.com/u/0/+EddieNaff/about/p/pub" target="_blank"><i class="fa fa-google-plus-square fa-5x"></i></a>';
+var HTMLlinkedin =    '<a href="http://www.linkedin.com/in/eddienaff" target="_blank">'+
+                      '<span class="fa-stack fa-2x">'+
+                      '<i class="fa fa-circle fa-stack-2x"></i>'+
+                      '<i class="fa fa-linkedin fa-inverse fa-stack-1x"></i>'+
+                      '</span></a>';
 
-var HTMLgithub = '<a href="http://github.com/Agent5" target="_blank"><i class="fa fa-github-square fa-5x"></i></a>';
+var HTMLfacebook =    '<a href="http://www.facebook.com/eddie.naff" target="_blank">'+
+                      '<span class="fa-stack fa-2x">'+
+                      '<i class="fa fa-circle fa-stack-2x"></i>'+
+                      '<i class="fa fa-facebook fa-inverse fa-stack-1x"></i>'+
+                      '</span></a>';
+
+var HTMLgooglePlus =  '<a href="https://plus.google.com/u/0/+EddieNaff/about/p/pub" target="_blank">'+
+                      '<span class="fa-stack fa-2x">'+
+                      '<i class="fa fa-circle fa-stack-2x"></i>'+
+                      '<i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>'+
+                      '</span></a>';
+
+var HTMLgithub =      '<a href="http://github.com/Agent5" target="_blank">'+
+                      '<span class="fa-stack fa-2x">'+
+                      '<i class="fa fa-circle fa-stack-2x"></i>'+
+                      '<i class="fa fa-github-alt fa-inverse fa-stack-1x"></i>'+
+                      '</span></a>';
 var HTMLblog = '<li class="flex-item">'; // <span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 

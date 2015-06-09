@@ -261,6 +261,10 @@ body {
     .myRole {
         font-size: 1em;
     }
+    /*hack to force space below the map which overflows the #map container*/
+    #mapDiv {
+        margin: 0 0 120px 0;
+    }
 }
 
 @media only screen and (min-width: 551px) and (max-width: 740px) {
@@ -270,4 +274,37 @@ body {
         min-font-size: 70px;
         font-family: "Lato", "Roboto", sans-serif;
     }
+    /* repeate of hack to force space below the map which overflows the #map container*/
+    #mapDiv {
+        margin: 0 0 60px 0;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    padding: 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+/*.fa {
+    background-color: #333;
+    border-radius: 80px;
+    color: #fff;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    margin: auto 3px;
+    width: 80px;
+    font-size: 40px;
+    text-align: center;
+}
+/*to make it colorize when hovered, for example the twitter icon:*/
+
+/*.fa-twitter:hover { 
+    background-color: #46c0fb; 
+}*/
+
+.fa {
+    padding: 0;
 }
