@@ -1,25 +1,18 @@
 {
-  "name": "Resume",
-  "version": "0.1.0",
-  "homepage": "https://github.com/Agent5/frontend-nanodegree-resume",
-  "authors": [
-    "Eddie Naff <eddienaff@gmail.com>"
-  ],
-  "description": "A personal resume for Eddie Naff",
-  "main": "index.html",
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "~3.3.4",
-    "fontawesome": "~4.3.0",
-    "min-max-font-size": "https://github.com/nathanford/min-max-font-size.git",
-    "trianglify": "https://github.com/qrohlf/trianglify.git#~0.2.1",
-    "colors": "https://github.com/Agent5/colors.git"
-  }
+	"name": "resume",
+	"version": "0.0.1",
+	"description": "Eddie Naff - Resume",
+	"dependencies": {
+		"bootstrap": "~3",
+		"angular": "~1.2",
+		"angular-resource": "~1.2",
+		"angular-mocks": "~1.2",
+		"angular-cookies": "~1.2",
+		"angular-animate": "~1.2",
+		"angular-touch": "~1.2",
+		"angular-sanitize": "~1.2",
+		"angular-bootstrap": "~0.11.2",
+		"angular-ui-utils": "~0.1.1",
+		"angular-ui-router": "~0.2.11"
+	}
 }
